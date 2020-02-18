@@ -1,70 +1,60 @@
 
 body {
     background-color: #eeeeee;
+    background-image: url("https://media2.trover.com/T/54308c3cd6bdd44d40004cb4/fixedw_large_4x.jpg");
 }
 
 h2 {
     text-align: center;
 }
 
-.grid {
-    width: 600px;
-    height: 580px;
-    margin: 0 auto;
-    background-color: #fff;
+.quiz-box {
+    width: 590px;
+    height: 570px;
     padding: 10px 50px 50px 50px;
-    border-radius: 50px;
-    border: 2px solid #cbcbcb;
-    box-shadow: 10px 15px 5px #cbcbcb;
+    margin: 0 auto;
+    background-color: deepskyblue;
+    
 }
 
-.grid h1 {
-    font-family: "sans-serif";
-    background-color: #57636e;
-    font-size: 60px;
+.quiz-box h1 {
+    font-family: "palatino linotype";
+    color: whitesmoke;
     text-align: center;
-    color: #ffffff;
-    padding: 2px 0px;
+    font-size: 50px;
     border-radius: 50px;
+    background-color: darkgreen;
 }
 
-#score {
-    color: #5A6772;
-    text-align: center;
+.quiz-box #questions {
     font-size: 30px;
+    font-family: "palatino linotype";
+    color: black;
 }
 
-.grid #question {
-    font-family: "monospace";
-    font-size: 30px;
-    color: #5A6772;
-}
-
-.buttons {
-    margin-top: 30px;
-}
-
-#btn0, #btn1, #btn2, #btn3 {
-    background-color: #778897;
+#button0, #button1, #button2, #button3 {
+    background-color: burlywood;
     width: 250px;
-    font-size: 20px;
-    color: #fff;
+    font-size: 25px;
+    color: black;
     border: 1px solid #1D3C6A;
-    border-radius: 50px;
     margin: 10px 40px 10px 0px;
     padding: 10px 10px;
 }
 
-#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+#button0:hover, #button1:hover, #button2:hover, #button3:hover {
     cursor: pointer;
-    background-color: #57636e;
+    background-color: lightgreen;
 }
 
-#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
-    outline: 0;
+#quiz-progress {
+    color: black;
+    font-size: 22px;
+    font-family: "palatino linotype";
 }
 
-#progress {
-    color: #2b2b2b;
-    font-size: 18px;
+#score {
+    text-align: center;
+    font-size: 30px;
+    color: black;
 }

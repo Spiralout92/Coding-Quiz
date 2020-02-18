@@ -18,21 +18,23 @@ function setTime() {
 
 //Up here is the timer ^^  
 
+
 function populate() {
+    
     if(quiz.isEnded()) {
         showScores();
     }
     else {
         // This here will show the questions.
-        var element = document.getElementById("question");
+        var element = document.getElementById("questions");
         element.innerHTML = quiz.getQuestionIndex().text;
 
         // This here will show the options.
         var choices = quiz.getQuestionIndex().choices;
         for(var i = 0; i < choices.length; i++) {
-            var element = document.getElementById("choice" + i);
+            var element = document.getElementById("answer" + i);
             element.innerHTML = choices[i];
-            guess("btn" + i, choices[i]);
+            guess("button" + i, choices[i]);
         }
 
         showProgress();
@@ -50,18 +52,18 @@ function guess(id, guess) {
 
 function showProgress() {
     var currentQuestionNumber = quiz.questionIndex + 1;
-    var element = document.getElementById("progress");
+    var element = document.getElementById("quiz-progress");
     element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
 };
 
 function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
-    gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
-    var element = document.getElementById("quiz");
+    var gameOverHTML = "<h1>Feel smarter now?</h1>";
+    gameOverHTML += "<h2 id='score'> Your score: " + quiz.score + "</h2>";
+    var element = document.getElementById("inner-box");
     element.innerHTML = gameOverHTML;
 };
 
-// These are the questions, and all answers are shown after the list of possible answers in the brackets.
+// These are the questions, and all correct answers are shown after the list of possible answers in the brackets.
 var questions = [
     new Question ("Luzon is the largest and most populous island in which Southeast Asian nation?", ["The Phillipines", "Malaysia", "Singapore", "Indonesia"], "The Phillipines"),
     new Question ("Who is the only man to serve two non-consecutive terms as US President, from 1885-1889 and 1893-1897?", ["Grover Cleveland", "Andrew Johnson", "Abraham Lincoln", "Milard Fillmore"], "Grover Cleveland"),
