@@ -20,7 +20,6 @@ Quiz.prototype.isEnded = function() {
     return this.questionIndex === this.questions.length;
 }
 
-
 function Question(text, choices, answer) {
     this.text = text;
     this.choices = choices;
@@ -91,7 +90,7 @@ function showProgress() {
 };
 
 function showScores() {
-    var gameOverHTML = "<h1>Feel smarter now?</h1>";
+    var gameOverHTML = "<h1>JavaScript Quiz!</h1>";
     gameOverHTML += "<h2 id='score'> Your score: " + quiz.score + "</h2>";
     var element = document.getElementById("inner-box");
     element.innerHTML = gameOverHTML;
@@ -99,11 +98,11 @@ function showScores() {
 
 // These are the questions, and all correct answers are shown after the list of possible answers in the brackets.
 var questions = [
-    new Question ("Luzon is the largest and most populous island in which Southeast Asian nation?", ["The Phillipines", "Malaysia", "Singapore", "Indonesia"], "The Phillipines"),
-    new Question ("Who is the only man to serve two non-consecutive terms as US President, from 1885-1889 and 1893-1897?", ["Grover Cleveland", "Andrew Johnson", "Abraham Lincoln", "Milard Fillmore"], "Grover Cleveland"),
-    new Question ("In which modern-day capital city was Archduke Franz Ferdinand assassinated by Gavrilo Princip in 1914, sparking the crisis that ushered in the First World War?", ["Belgrade", "Sarajevo", "Tirana", "Zagreb"], "Sarajevo"),
-    new Question ("The eruption of which volcano in 1883 is commonly-cited as the loudest sound in recent human history?", ["Novarupta", "Santa Maria Volcano", "Yellowstone", "Krakatau"], "Krakatau"),
-    new Question ("Which small country in the horn of Africa - whose capital has the same name - was formerly known, during the colonial period, as French Somaliland?", ["Botswana", "Djibouti", "Namibia", "Angola"], "Djibouti")
+    new Question ("Which best explains getSelection()?", ["Returns the VALUE of a selected OPTION", "Returns document.URL of the window in focus", "Returns the value of cursor-selected text", "Returns the VALUE of a checked radio input"], "Returns the value of cursor-selected text"),
+    new Question ("Choose the client-side JavaScript object:", ["Database", "Cursor", "Client", "FileUpLoad"], "FileUpLoad"),
+    new Question ("What is meant by keyword 'this' in javascript?", ["It refers to the object it belongs to", "It refers to the previous object", "It is a variable which contains value", "None of the above"], "It refers to the object it belongs to"),
+    new Question ("Choose the server-side JavaScript object:", ["FileUpLoad", "Function", "File", "Date"], "File"),
+    new Question ("In Javascript, what does isNaN function do?", ["Return true if the argument is not a number", "Return false if the argument is not a number", "Return true if the argument is a number", "None of the above"], "Return true if the argument is not a number")
 ];
 
 // This creates the quiz.
