@@ -10,12 +10,11 @@ body {
 }
 
 .quiz-box {
-    width: 590px;
-    height: 570px;
+    width: 600px;
+    height: 600x;
     padding: 10px 50px 50px 50px;
     margin: 0 auto;
     background-color: deepskyblue;
-    
 }
 
 .quiz-box h1 {
@@ -36,7 +35,7 @@ body {
 #button0, #button1, #button2, #button3 {
     background-color: burlywood;
     width: 250px;
-    font-size: 25px;
+    font-size: 20px;
     color: black;
     border: 1px solid #1D3C6A;
     margin: 10px 40px 10px 0px;
