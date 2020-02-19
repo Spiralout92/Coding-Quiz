@@ -4,7 +4,7 @@ Current author: Maintenance and further contributions are made by Christopher Go
 
 Link for deployed website: 
 
-[Website] (https://spiralout92.github.io/Fun-Facts-Quiz/)
+[Website] (https://spiralout92.github.io/JavaScript-Quiz/)
 
 Link for deployed website image: 
 
